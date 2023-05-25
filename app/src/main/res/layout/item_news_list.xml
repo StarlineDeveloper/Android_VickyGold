@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:orientation="vertical"
+    android:layout_margin="@dimen/value_10"
+android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:background="@drawable/shape_card"
+    android:padding="@dimen/value_10"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:singleLine="false"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:text="Dinesh N Nakum" />
+
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:text="Dinesh N Nakum" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/value_5"
+        android:background="@color/black"
+        android:layout_height="1dp"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.6"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:textStyle="italic"
+                android:textSize="@dimen/font_14"
+                android:drawableLeft="@drawable/ic_event_available_black_24dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:text="28-05-2020 07:45" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="right"
+            android:gravity="right|center"
+            android:layout_weight="0.4"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="@dimen/value_100"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:background="@drawable/button_delte"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:layout_marginRight="@dimen/value_10"
+                android:padding="@dimen/value_7"
+                android:layout_gravity="center"
+                android:text="Delete" />
+
+
+            <TextView
+                android:id="@+id/et_edit"
+                android:layout_width="@dimen/value_100"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:background="@drawable/button_green"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:padding="@dimen/value_7"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:text="Edit" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lay_back"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/value_15"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_keyboard_backspace_black_24dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="top|right"
+                android:gravity="top"
+                android:layout_marginTop="@dimen/value_3"
+                android:layout_marginRight="@dimen/value_25"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/value_70"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="@dimen/value_30"
+                    android:padding="@dimen/value_10"
+                    android:src="@drawable/topuplogo" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            android:layout_height="@dimen/value_0.5"></View>
+
+
+        <LinearLayout
+            android:id="@+id/lay_1"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/value_10"
+            android:layout_marginLeft="@dimen/value_10"
+            android:layout_height="wrap_content">
+
+            <com.VijayAssayCenter.font.MyTextView
+                android:id="@+id/ask_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/value_5"
+                android:padding="@dimen/value_15"
+                android:text="A simple, Safe and Transparent way to buy 24 karat Gold &amp; Silver with multiple features and benefits."
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/value_10"
+                android:src="@drawable/trust" />
+
+
+
+            <com.VijayAssayCenter.font.MyTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="Gold Purity Assured"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <com.VijayAssayCenter.font.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/value_10"
+                android:layout_gravity="center"
+                android:text="24 Karat 99.50 Pure Gold from Vijay Assay Centre refinery accredited by NABL (National Accreditation Board for Testing and Calibration Laboratories)"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_14" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_2"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/value_10"
+            android:layout_marginLeft="@dimen/value_10"
+            android:layout_height="wrap_content">
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/value_10"
+                android:src="@drawable/liverate" />
+            <com.VijayAssayCenter.font.MyTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="Transparency"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+            <com.VijayAssayCenter.font.MyTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="Live Gold Price"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_14" />
+            <com.VijayAssayCenter.font.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/value_10"
+                android:layout_gravity="center"
+                android:text="Global market linked real-time price inclusive GST &amp; TCS with no hidden costs"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/value_20"
+                android:padding="@dimen/value_10"
+                android:src="@drawable/convenience" />
+            <com.VijayAssayCenter.font.MyTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="Convenience"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+            <com.VijayAssayCenter.font.MyTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="Tt's just Matter of Few Clicks"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_14" />
+            <com.VijayAssayCenter.font.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/value_10"
+                android:layout_gravity="center"
+                android:text="Buy your Gold or Check your Gold transactions anytime anywhere in our app"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_14" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/lay_3"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/value_10"
+            android:layout_marginLeft="@dimen/value_10"
+            android:layout_height="match_parent">
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/value_10"
+                android:src="@drawable/flexibility" />
+            <com.VijayAssayCenter.font.MyTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="Flexibility"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+            <com.VijayAssayCenter.font.MyTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="Buy as low as 10gm"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_14" />
+            <com.VijayAssayCenter.font.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/value_10"
+                android:text="You can now buy gold as low as 10gm at market price or future price"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/value_20"
+                android:padding="@dimen/value_10"
+                android:src="@drawable/delivery" />
+
+            <com.VijayAssayCenter.font.MyTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="Delivery at your convenience"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_14" />
+            <com.VijayAssayCenter.font.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/value_10"
+                android:layout_gravity="center"
+                android:text="Pickup order from our listed stores at no additional charges"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_14" />
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</FrameLayout>

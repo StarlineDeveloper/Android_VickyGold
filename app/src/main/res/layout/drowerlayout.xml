@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/centerbackgaround">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="#DFBB6F"
+            android:padding="@dimen/value_15"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.2"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+
+                <com.VijayAssayCenter.font.MyTextViewBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:text="Vicky Surywanshi" />
+
+                <com.VijayAssayCenter.font.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_14"
+                    android:textStyle="italic"
+                    android:text="Vicky Jewellery Works" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.8"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:id="@+id/ivDrawer"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/value_10"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="@dimen/value_8"
+                        android:src="@drawable/ic_user" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_menu_new"
+                        app:civ_border_width="1dp"
+                        android:layout_gravity="bottom|right"
+                        app:civ_border_color="#000000"/>
+
+
+
+
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="#DFBB6F"
+            android:layout_marginTop="@dimen/value_5"
+            android:padding="@dimen/value_15"
+            android:layout_height="wrap_content">
+
+
+
+            <com.VijayAssayCenter.font.MyTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:text="Your Profile (60% Complete)" />
+
+            <com.VijayAssayCenter.font.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:textSize="@dimen/font_14"
+                android:text="Click to update" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="#DFBB6F"
+            android:layout_marginTop="@dimen/value_5"
+            android:paddingLeft="@dimen/value_15"
+            android:paddingTop="@dimen/value_25"
+            android:paddingBottom="@dimen/value_25"
+            android:layout_height="wrap_content">
+
+
+
+            <com.VijayAssayCenter.font.MyTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:text="Available Order Limit : 50gms" />
+
+
+
+
+
+        </LinearLayout>
+
+
+        <com.VijayAssayCenter.font.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:paddingLeft="@dimen/value_15"
+            android:paddingTop="@dimen/value_10"
+            android:text="Modify Order Limit" />
+
+        <com.VijayAssayCenter.font.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:paddingLeft="@dimen/value_15"
+            android:paddingTop="@dimen/value_10"
+            android:text="Payment Bank Details" />
+
+        <com.VijayAssayCenter.font.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:paddingLeft="@dimen/value_15"
+            android:paddingTop="@dimen/value_10"
+            android:text="Metal Delivery Location" />
+
+        <com.VijayAssayCenter.font.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:paddingLeft="@dimen/value_15"
+            android:paddingTop="@dimen/value_10"
+            android:text="Contact Us" />
+
+        <com.VijayAssayCenter.font.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:paddingLeft="@dimen/value_15"
+            android:paddingTop="@dimen/value_10"
+            android:text="Sign Out" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

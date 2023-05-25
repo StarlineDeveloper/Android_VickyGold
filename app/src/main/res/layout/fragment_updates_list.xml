@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmet.UpdatesList">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_news"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_marginBottom="@dimen/value_50"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    <LinearLayout
+        android:id="@+id/lay_add"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom|center"
+        android:gravity="bottom|center"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/ivLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_control_point_black_24dp" />
+
+        <TextView
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Add Updates"
+            android:textStyle="bold"
+            android:padding="@dimen/value_10"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</FrameLayout>

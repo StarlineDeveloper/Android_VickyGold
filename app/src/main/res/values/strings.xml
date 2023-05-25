@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Vicky Jewellery Works</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint_ok">Ok</string>
+    <string name="hint_cancel">Cancel</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="time">Time:</string>
+    <string name="default_notification_channel_id" />
+
+    <string name="default_notification_channel_title">Normal notification</string>
+    <string name="Powered">Powered By</string>
+    <string name="ltd">VIJAY ASSAY CENTRE PVT. LTD</string>
+    <string name="ltd2">Vicky Jewellery Works</string>
+    <string name="lableonly">Eastern India\'s Most Trusted Bullion Dealer</string>
+    <string name="newAccount">Login or Create a New Account</string>
+    <string name="entermobileno">Enter Mobile Number</string>
+    <string name="mobileno">Mobile Number</string>
+    <string name="forgotpass">Forgot Password/Login Issues?</string>
+    <string name="getotp">Get OTP</string>
+    <string name="skip">SKIP TO LIVE RATE</string>
+    <string name="skip2">SKIP</string>
+    <string name="or">OR</string>
+    <string name="ex">Sign in using Account ID (e.g. 11001)</string>
+    <string name="name">Your Name</string>
+    <string name="entername">Enter your name</string>
+    <string name="next">NEXT</string>
+    <string name="Start">START</string>
+    <string name="enterotp">Enter OTP</string>
+    <string name="OTP">OTP</string>
+    <string name="resend">Resend OTP</string>
+    <string name="proceed">Proceed Securely</string>
+    <string name="namestore">Enter your Jewellery Store name</string>
+    <string name="namestore1">Your Jewellery Store</string>
+    <string name="namestore3">Enter Store Name</string>
+    <string name="namestore2">Name</string>
+
+    <string name="BankName">Bank Name</string>
+    <string name="AccountName">Account Name</string>
+    <string name="AccountNo">Account No</string>
+    <string name="IFSCCode">IFSC Code</string>
+    <string name="BranchName">Branch Name</string>
+    <string name="BullionRate">Bullion Rate\n</string>
+    <string name="YourOrder">Your Order</string>
+    <string name="CoinRate">Coin Rate</string>
+    <string name="CoinOrders">Coin Orders</string>
+    <string name="BankInfo">Bank Info</string>
+
+
+</resources>

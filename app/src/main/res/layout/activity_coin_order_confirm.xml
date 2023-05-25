@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bacground_color1">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:paddingLeft="@dimen/value_20">
+
+                <ImageView
+                    android:id="@+id/iv_close"
+                    android:layout_width="40dp"
+                    android:layout_height="@dimen/value_40"
+                    android:layout_gravity="center"
+                    android:src="@drawable/close" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/value_5">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/value_60"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/value_40"
+                        android:padding="@dimen/value_5"
+                        android:src="@drawable/topuplogo" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/value_3"
+                android:background="@color/black"></View>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/value_60"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/value_15"
+                    android:padding="@dimen/value_5"
+                    android:src="@drawable/ic_iconfinder_tick_646195" />
+
+                <com.VijayAssayCenter.font.MyTextViewBold
+                    android:id="@+id/tv_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="#203864"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <com.VijayAssayCenter.font.MyTextView
+                    android:id="@+id/tv_deal_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/value_10"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/value_20"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <com.VijayAssayCenter.font.MyTextViewBold
+                    android:id="@+id/symob_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/value_10"
+                    android:gravity="left"
+                    android:text="-"
+                    android:textColor="#203864"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <com.VijayAssayCenter.font.MyTextViewBold
+                    android:id="@+id/tv_q"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/value_10"
+                    android:gravity="left"
+                    android:text="-"
+                    android:textColor="#203864"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <com.VijayAssayCenter.font.MyTextViewBold
+                    android:id="@+id/tv_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/value_10"
+                    android:gravity="left"
+                    android:text="-"
+                    android:textColor="#203864"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <com.VijayAssayCenter.font.MyTextViewBold
+                    android:id="@+id/tv_net_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/value_10"
+                    android:gravity="left"
+                    android:text="-"
+                    android:textColor="#203864"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <com.VijayAssayCenter.font.MyTextView
+                android:id="@+id/view_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/value_20"
+                android:background="@drawable/orderconfir"
+                android:gravity="center"
+                android:paddingLeft="@dimen/value_20"
+                android:paddingTop="@dimen/value_5"
+                android:paddingRight="@dimen/value_20"
+                android:paddingBottom="@dimen/value_5"
+                android:text="View order details"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <com.VijayAssayCenter.font.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/value_10"
+                android:gravity="center"
+                android:paddingLeft="@dimen/value_30"
+                android:paddingRight="@dimen/value_30"
+                android:text="You will receive email confirmation with your order details within 24 hours"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <com.VijayAssayCenter.font.MyTextView
+                android:id="@+id/tv_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/value_20"
+                android:background="@drawable/chektik"
+                android:gravity="center"
+                android:paddingLeft="@dimen/value_20"
+                android:paddingTop="@dimen/value_5"
+                android:paddingRight="@dimen/value_20"
+                android:paddingBottom="@dimen/value_5"
+                android:text="Call to Cancel/Modify Order"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/centerbackgaround" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginBottom="2dp"
+                android:background="#203864"></View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginBottom="@dimen/value_1"
+                android:background="#D7A132"></View>
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+</FrameLayout>

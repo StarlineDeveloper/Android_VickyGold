@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bacground_color1">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:src="@drawable/smailllogo" />
+
+        <LinearLayout
+            android:id="@+id/lay_back"
+            android:layout_width="wrap_content"
+            android:layout_gravity="top|left"
+            android:padding="@dimen/value_15"
+            android:layout_marginTop="@dimen/value_10"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_keyboard_backspace_black_24dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/centerbackgaround" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="top"
+            android:layout_marginLeft="@dimen/value_25"
+            android:layout_marginRight="@dimen/value_25"
+            android:layout_marginTop="@dimen/value_100"
+            android:layout_height="wrap_content">
+
+            <com.VijayAssayCenter.font.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Login"
+                android:paddingBottom="@dimen/value_8"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_18" />
+
+            <com.VijayAssayCenter.font.MyTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="Enter ID Password"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+
+
+
+
+            <EditText
+                android:id="@+id/et_user_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Login ID"
+                android:layout_marginTop="@dimen/value_50"
+                android:layout_marginBottom="@dimen/value_5"
+                android:textCursorDrawable="@drawable/custome"
+                android:background="@android:color/transparent"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_18" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#203864"
+                android:layout_height="@dimen/value_2"></View>
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_marginTop="@dimen/value_15"
+                android:layout_marginBottom="@dimen/value_5"
+                android:textCursorDrawable="@drawable/custome"
+                android:background="@android:color/transparent"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_18" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#203864"
+                android:layout_height="@dimen/value_2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/value_10"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:backgroundTint="@color/black"
+                    android:buttonTint="@color/black"
+                    android:textSize="@dimen/font_14"
+                    android:text="Remember Me"
+                    android:checked="true"
+                    android:textColor="@color/black" />
+
+
+                <com.VijayAssayCenter.font.MyTextView
+                    android:id="@+id/tv_forgot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_weight="0.4"
+                    android:paddingTop="@dimen/value_5"
+                    android:text="@string/forgotpass"
+                    android:textColor="@color/text1"
+                    android:textSize="14dp" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/lay_login"
+                android:layout_width="match_parent"
+                android:background="@drawable/btn1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:elevation="@dimen/value_2"
+                android:layout_marginTop="@dimen/value_20"
+                android:layout_height="match_parent">
+
+                <com.VijayAssayCenter.font.MyTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:text="Sign in"
+                    android:drawablePadding="@dimen/value_5"
+                    android:textColor="@color/white"
+                    android:elevation="@dimen/value_2"
+                    android:padding="@dimen/value_10"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lay_create"
+                android:layout_width="match_parent"
+                android:background="@drawable/btn1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:elevation="@dimen/value_2"
+                android:layout_marginTop="@dimen/value_20"
+                android:layout_height="match_parent">
+
+                <com.VijayAssayCenter.font.MyTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:text="Create New Account"
+                    android:drawablePadding="@dimen/value_5"
+                    android:textColor="@color/white"
+                    android:elevation="@dimen/value_2"
+                    android:padding="@dimen/value_10"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+
+                <com.VijayAssayCenter.font.MyTextView
+                    android:id="@+id/tv_condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/value_5"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </FrameLayout>
+</FrameLayout>

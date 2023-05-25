@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Vickygold.iml" filepath="$PROJECT_DIR$/Vickygold.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Vickygold.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Vickygold.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Vickygold.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Vickygold.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Vickygold.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Vickygold.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Vickygold.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Vickygold.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>

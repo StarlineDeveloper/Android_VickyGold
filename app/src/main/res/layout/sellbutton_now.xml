@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.VijayAssayCenter.font.MyTextViewBold
+            android:id="@+id/sellbutton_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/value_25"
+            android:layout_marginTop="@dimen/value_20"
+            android:layout_marginRight="@dimen/value_15"
+            android:background="@drawable/redbutton"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:padding="@dimen/value_10"
+            android:text="SELL"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,251 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/value_3"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#329AA1A8"
+        android:padding="3dp"
+        android:orientation="vertical">
+
+
+        <com.VijayAssayCenter.font.MyTextView
+            android:id="@+id/tvSymbolName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_14"
+            android:singleLine="true"
+            android:padding="@dimen/value_5"
+            android:gravity="center"
+            tools:text="Gold 999" />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/black_66"
+            android:layout_marginBottom="@dimen/value_3"
+            android:layout_height="1dp">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/fl_BuyValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="20">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:layout_height="match_parent">
+
+                        <com.VijayAssayCenter.font.MyTextViewBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Bid: "
+                            android:textStyle="bold"
+                            android:padding="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_12"/>
+
+                        <com.VijayAssayCenter.font.MyTextViewBold
+                            android:id="@+id/tvBuyValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_12"
+                            tools:text="74.2666" />
+
+                    </LinearLayout>
+
+
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_SellValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="20">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+                    <com.VijayAssayCenter.font.MyTextViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Ask: "
+                        android:textStyle="bold"
+                        android:padding="2dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_12"/>
+
+                        <com.VijayAssayCenter.font.MyTextViewBold
+                            android:id="@+id/tvSellValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_12"
+                            tools:text="13212" />
+
+                    </LinearLayout>
+
+
+
+                </FrameLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="20">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:layout_height="match_parent">
+
+                        <com.VijayAssayCenter.font.MyTextViewBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Low: "
+                            android:textStyle="bold"
+                            android:padding="2dp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_12"/>
+
+                        <com.VijayAssayCenter.font.MyTextViewBold
+                            android:id="@+id/tvHighValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_12"
+                            android:textStyle="bold"
+                            tools:text="13212" />
+
+
+                    </LinearLayout>
+
+
+
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="20">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+                    <com.VijayAssayCenter.font.MyTextViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="High: "
+                        android:textStyle="bold"
+                        android:padding="2dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_12"/>
+
+
+                        <com.VijayAssayCenter.font.MyTextViewBold
+                            android:id="@+id/tvLowValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_12"
+                            tools:text="13212" />
+                    </LinearLayout>
+
+
+
+                </FrameLayout>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

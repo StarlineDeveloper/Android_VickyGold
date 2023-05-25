@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/value_8"
+    android:layout_marginTop="1.5dp"
+    android:layout_marginRight="@dimen/value_8"
+    android:background="@drawable/shape_min"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lay_item_live"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/value_10"
+            android:orientation="horizontal"
+            android:padding="@dimen/value_5">
+
+            <ImageView
+                android:id="@+id/iv_menu"
+                android:layout_width="@dimen/value_30"
+                android:layout_height="@dimen/value_30"
+                android:background="@color/white"
+                android:src="@drawable/gold" />
+
+            <com.VijayAssayCenter.font.MyTextViewBold
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/value_5"
+                android:text="Gold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_18"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/value_10"
+
+            android:layout_marginRight="@dimen/value_10"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="@dimen/value_0"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="0.6"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.VijayAssayCenter.font.MyTextViewBold
+                    android:id="@+id/ask_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6306"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/value_30"
+                    android:textStyle="bold" />
+
+                <com.VijayAssayCenter.font.MyTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingStart="@dimen/value_7"
+                    android:text="INR /"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/value_16"
+                    android:textStyle="bold" />
+
+
+                <com.VijayAssayCenter.font.MyTextViewBold
+                    android:id="@+id/tv_gram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingStart="@dimen/value_7"
+                    android:text="--"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/value_16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/value_0"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="0.4"
+                android:orientation="vertical">
+
+                <com.VijayAssayCenter.font.MyTextViewBold
+                    android:id="@+id/tv_hight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="606060"
+                    android:textColor="@color/primecolor"
+                    android:textSize="@dimen/font_14"
+                    android:textStyle="bold" />
+
+                <com.VijayAssayCenter.font.MyTextViewBold
+                    android:id="@+id/tv_low"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="606060"
+                    android:textColor="@color/primecolor"
+                    android:textSize="@dimen/font_14"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_buy_now"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/value_10"
+            android:layout_marginTop="@dimen/value_1"
+            android:layout_marginRight="@dimen/value_10"
+            android:layout_marginBottom="@dimen/value_5"
+            android:background="@drawable/btn1"
+            android:elevation="@dimen/value_2"
+            android:gravity="center">
+
+
+            <ImageView
+                android:layout_width="31dp"
+                android:layout_height="@dimen/value_35"
+                android:layout_gravity="center|right"
+                android:layout_marginStart="@dimen/value_5"
+                android:layout_marginEnd="@dimen/value_5"
+                android:src="@drawable/eeeewew" />
+
+            <com.VijayAssayCenter.font.MyTextViewBold
+                android:id="@+id/tv_by_now"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:elevation="@dimen/value_2"
+                android:gravity="center"
+                android:padding="@dimen/value_8"
+                android:text="BUY / SELL GOLD"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/value_16"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_marginLeft="@dimen/value_8"-->
+    <!--    android:layout_marginTop="@dimen/value_2"-->
+    <!--    android:layout_marginRight="@dimen/value_8"-->
+    <!--    android:orientation="vertical">-->
+
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/lay_item_live"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@drawable/shape_min"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:padding="@dimen/value_5">-->
+
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:weightSum="1">-->
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:orientation="vertical">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:orientation="horizontal"-->
+    <!--                    android:paddingLeft="@dimen/value_5"-->
+    <!--                    android:paddingTop="@dimen/value_5">-->
+
+
+    <!--                    <ImageView-->
+    <!--                        android:id="@+id/iv_menu"-->
+    <!--                        android:layout_width="@dimen/value_35"-->
+    <!--                        android:layout_height="@dimen/value_35"-->
+    <!--                        android:layout_gravity="center|right"-->
+    <!--                        android:layout_marginRight="@dimen/value_5"-->
+    <!--                        android:background="@color/white"-->
+    <!--                        android:src="@drawable/gold" />-->
+
+    <!--                    <com.VijayAssayCenter.font.MyTextViewBold-->
+    <!--                        android:id="@+id/tv_name"-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:gravity="left"-->
+    <!--                        android:paddingRight="@dimen/value_15"-->
+    <!--                        android:paddingBottom="@dimen/value_5"-->
+    <!--                        android:text="fdfdf"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="@dimen/font_18"-->
+    <!--                        android:textStyle="bold" />-->
+    <!--                </LinearLayout>-->
+
+
+    <!--            </LinearLayout>-->
+
+
+    <!--        </LinearLayout>-->
+
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:weightSum="1">-->
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_weight="0.3"-->
+    <!--                android:gravity="left"-->
+    <!--                android:orientation="horizontal">-->
+
+    <!--                <com.VijayAssayCenter.font.MyTextViewBold-->
+    <!--                    android:id="@+id/ask_rate"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_gravity="bottom"-->
+    <!--                    android:paddingStart="@dimen/value_10"-->
+    <!--                    android:text="6306"-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="30dp"-->
+    <!--                    android:textStyle="bold" />-->
+
+
+    <!--                <com.VijayAssayCenter.font.MyTextViewBold-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_gravity="bottom"-->
+    <!--                    android:paddingStart="@dimen/value_7"-->
+    <!--                    android:text="INR /"-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="@dimen/value_16"-->
+    <!--                    android:textStyle="bold" />-->
+
+
+    <!--                <com.VijayAssayCenter.font.MyTextViewBold-->
+    <!--                    android:id="@+id/tv_gram"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_gravity="bottom"-->
+    <!--                    android:paddingStart="@dimen/value_7"-->
+    <!--                    android:text="&#45;&#45;"-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="16sp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--            </LinearLayout>-->
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginEnd="2dp"-->
+    <!--                android:layout_marginBottom="7dp"-->
+    <!--                android:layout_weight="0.7"-->
+    <!--                android:orientation="vertical">-->
+
+
+    <!--                <com.VijayAssayCenter.font.MyTextViewBold-->
+    <!--                    android:id="@+id/tv_hight"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:padding="3dp"-->
+    <!--                    android:text="&#45;&#45;"-->
+    <!--                    android:textColor="@color/primecolor"-->
+    <!--                    android:textSize="@dimen/font_14"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--                <com.VijayAssayCenter.font.MyTextViewBold-->
+    <!--                    android:id="@+id/tv_low"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    android:layout_marginTop="2dp"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:padding="3dp"-->
+    <!--                    android:text="&#45;&#45;"-->
+    <!--                    android:textColor="@color/primecolor"-->
+    <!--                    android:textSize="@dimen/font_14"-->
+    <!--                    android:textStyle="bold"-->
+    <!--                    android:visibility="visible" />-->
+
+
+    <!--            </LinearLayout>-->
+
+
+    <!--        </LinearLayout>-->
+
+
+    <!--        <LinearLayout-->
+    <!--            android:id="@+id/lay_buy_now"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_marginLeft="@dimen/value_10"-->
+    <!--            android:layout_marginTop="@dimen/value_1"-->
+    <!--            android:layout_marginRight="@dimen/value_10"-->
+    <!--            android:layout_marginBottom="@dimen/value_5"-->
+    <!--            android:background="@drawable/btn1"-->
+    <!--            android:elevation="@dimen/value_2"-->
+    <!--            android:gravity="center">-->
+
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="31dp"-->
+    <!--                android:layout_height="@dimen/value_35"-->
+    <!--                android:layout_gravity="center|right"-->
+    <!--                android:layout_marginLeft="5dp"-->
+    <!--                android:layout_marginRight="@dimen/value_5"-->
+    <!--                android:src="@drawable/eeeewew" />-->
+
+    <!--            <com.VijayAssayCenter.font.MyTextViewBold-->
+    <!--                android:id="@+id/tv_by_now"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:elevation="@dimen/value_2"-->
+    <!--                android:gravity="center"-->
+    <!--                android:padding="@dimen/value_8"-->
+    <!--                android:text="BUY / SELL GOLD"-->
+    <!--                android:textAllCaps="true"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:textSize="16dp"-->
+    <!--                android:textStyle="bold" />-->
+
+
+    <!--        </LinearLayout>-->
+
+    <!--        <com.VijayAssayCenter.font.MyTextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_marginTop="@dimen/value_5"-->
+    <!--            android:gravity="center"-->
+    <!--            android:paddingLeft="@dimen/value_20"-->
+    <!--            android:paddingRight="@dimen/value_20"-->
+    <!--            android:text="Note: BOOKING ONCE MADE CANNOT BE CANCELLED"-->
+    <!--            android:textColor="@color/red"-->
+    <!--            android:textSize="@dimen/font_14"-->
+    <!--            android:visibility="gone" />-->
+
+    <!--    </LinearLayout>-->
+
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/lay_on_off"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:visibility="gone">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:background="#3291C6F7">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:orientation="horizontal"-->
+    <!--                    android:padding="@dimen/value_10">-->
+
+
+    <!--                    <com.VijayAssayCenter.font.MyTextView-->
+    <!--                        android:id="@+id/market_price"-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:layout_marginRight="@dimen/value_5"-->
+    <!--                        android:layout_weight="0.5"-->
+    <!--                        android:background="@drawable/white_btn"-->
+    <!--                        android:gravity="center"-->
+    <!--                        android:padding="@dimen/value_8"-->
+    <!--                        android:text="Market Price"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="16dp" />-->
+
+    <!--                    <com.VijayAssayCenter.font.MyTextView-->
+    <!--                        android:id="@+id/future_rate"-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:layout_marginLeft="@dimen/value_5"-->
+    <!--                        android:layout_weight="0.5"-->
+    <!--                        android:background="@drawable/btn1"-->
+    <!--                        android:gravity="center"-->
+    <!--                        android:padding="@dimen/value_8"-->
+    <!--                        android:text="Future Rate"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="16dp" />-->
+
+    <!--                </LinearLayout>-->
+
+
+    <!--            </LinearLayout>-->
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="@dimen/value_10"-->
+    <!--                android:layout_marginRight="@dimen/value_10"-->
+    <!--                android:background="#3291C6F7"-->
+    <!--                android:orientation="vertical">-->
+
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:orientation="horizontal">-->
+
+    <!--                    <EditText-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:layout_weight="0.5"-->
+    <!--                        android:background="@android:color/transparent"-->
+    <!--                        android:text="1504"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textCursorDrawable="@drawable/custome"-->
+    <!--                        android:textSize="@dimen/font_18"-->
+    <!--                        android:textStyle="bold" />-->
+
+    <!--                    <com.VijayAssayCenter.font.MyTextViewBold-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:layout_weight="0.5"-->
+    <!--                        android:gravity="right"-->
+    <!--                        android:text="INR / gm"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="18dp"-->
+    <!--                        android:textStyle="bold" />-->
+
+
+    <!--                </LinearLayout>-->
+
+
+    <!--                <View-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="@dimen/value_1"-->
+    <!--                    android:layout_marginTop="@dimen/value_10"-->
+    <!--                    android:background="@color/btn"></View>-->
+
+    <!--            </LinearLayout>-->
+
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:background="@color/white">-->
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:orientation="horizontal"-->
+    <!--                    android:padding="@dimen/value_10">-->
+
+
+    <!--                    <com.VijayAssayCenter.font.MyTextView-->
+    <!--                        android:id="@+id/buy_in_amount"-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:layout_marginRight="@dimen/value_5"-->
+    <!--                        android:layout_weight="0.5"-->
+    <!--                        android:background="@drawable/btn1"-->
+    <!--                        android:gravity="center"-->
+    <!--                        android:padding="@dimen/value_8"-->
+    <!--                        android:text="Buy in Amount"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="16dp" />-->
+
+    <!--                    <com.VijayAssayCenter.font.MyTextView-->
+    <!--                        android:id="@+id/buy_in_gram"-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:layout_marginLeft="@dimen/value_5"-->
+    <!--                        android:layout_weight="0.5"-->
+    <!--                        android:background="@drawable/white_btn"-->
+    <!--                        android:gravity="center"-->
+    <!--                        android:padding="@dimen/value_10"-->
+    <!--                        android:text="Buy in Grams"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="16dp" />-->
+
+    <!--                </LinearLayout>-->
+
+
+    <!--            </LinearLayout>-->
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="@dimen/value_10"-->
+    <!--                android:layout_marginRight="@dimen/value_10"-->
+    <!--                android:orientation="vertical">-->
+
+
+    <!--                <LinearLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:orientation="horizontal">-->
+
+    <!--                    <EditText-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:layout_weight="0.5"-->
+    <!--                        android:background="@android:color/transparent"-->
+    <!--                        android:text="1504"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textCursorDrawable="@drawable/custome"-->
+    <!--                        android:textSize="@dimen/font_18"-->
+    <!--                        android:textStyle="bold" />-->
+
+    <!--                    <com.VijayAssayCenter.font.MyTextViewBold-->
+    <!--                        android:layout_width="match_parent"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_gravity="center"-->
+    <!--                        android:layout_weight="0.5"-->
+    <!--                        android:gravity="right"-->
+    <!--                        android:text="INR / gm"-->
+    <!--                        android:textColor="@color/black"-->
+    <!--                        android:textSize="18dp"-->
+    <!--                        android:textStyle="bold" />-->
+
+
+    <!--                </LinearLayout>-->
+
+
+    <!--                <View-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="@dimen/value_1"-->
+    <!--                    android:layout_marginTop="@dimen/value_10"-->
+    <!--                    android:background="@color/btn"></View>-->
+
+    <!--                <com.VijayAssayCenter.font.MyTextView-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    android:gravity="left"-->
+    <!--                    android:paddingTop="@dimen/value_5"-->
+    <!--                    android:text="Inclusive of GST + TCS"-->
+    <!--                    android:textColor="@color/black"-->
+    <!--                    android:textSize="18dp" />-->
+
+    <!--            </LinearLayout>-->
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:layout_marginLeft="@dimen/value_10"-->
+    <!--                android:layout_marginTop="@dimen/value_8"-->
+    <!--                android:layout_marginRight="@dimen/value_10"-->
+    <!--                android:layout_marginBottom="@dimen/value_5"-->
+    <!--                android:background="@drawable/btn1"-->
+    <!--                android:elevation="@dimen/value_2"-->
+    <!--                android:gravity="center">-->
+
+
+    <!--                <com.VijayAssayCenter.font.MyTextViewBold-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_gravity="center"-->
+    <!--                    android:elevation="@dimen/value_2"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:padding="@dimen/value_8"-->
+    <!--                    android:text="Proceed to Pay ₹ 5000.00"-->
+    <!--                    android:textColor="@color/white"-->
+    <!--                    android:textSize="18dp"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--            </LinearLayout>-->
+
+
+    <!--        </LinearLayout>-->
+
+    <!--    </LinearLayout>-->
+
+
+    <!--</LinearLayout>-->

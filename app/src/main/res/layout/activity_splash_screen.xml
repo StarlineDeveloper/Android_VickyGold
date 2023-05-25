@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bacground_color1">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:src="@drawable/design" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/centerbackgaround" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/value_250"
+                android:layout_height="@dimen/value_100"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/value_30"
+                android:layout_marginLeft="@dimen/value_30"
+                android:src="@drawable/splashlogo" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/value_60"
+                android:layout_marginLeft="@dimen/value_60"
+                android:src="@drawable/vickytext" />
+            <com.VijayAssayCenter.font.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/value_10"
+                android:paddingRight="@dimen/value_10"
+                android:text="@string/lableonly"
+                android:textColor="@color/black"
+                android:textSize="@dimen/value_25" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <com.VijayAssayCenter.font.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/Powered"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/value_20"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_18" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/value_15"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="@dimen/value_60"
+                android:layout_height="@dimen/value_60"
+                android:layout_gravity="center"
+                android:src="@drawable/tab" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/value_10"
+                android:layout_height="match_parent">
+
+                <com.VijayAssayCenter.font.MyTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_gravity="left"
+                    android:text="@string/ltd"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_18" />
+
+                <com.VijayAssayCenter.font.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="@dimen/value_5"
+                    android:text="Engraving golden relations since 1972"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </FrameLayout>
+</FrameLayout>

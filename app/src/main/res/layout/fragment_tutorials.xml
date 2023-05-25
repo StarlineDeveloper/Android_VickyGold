@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/centerbackgaround"
+    android:orientation="vertical"
+    tools:context=".Fragmet.BullionRate">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <com.VijayAssayCenter.font.MyTextViewBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/value_5"
+                    android:text="To place order, contact"
+                    android:textColor="@color/primecolor"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <com.VijayAssayCenter.font.MyTextViewBold
+                    android:id="@+id/tv_numberv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/value_5"
+                    android:text="9331113115"
+                    android:textColor="@color/primecolor"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/value_5"
+                android:paddingRight="@dimen/value_5"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/value_45"
+                        android:layout_height="@dimen/value_45"
+                        android:padding="@dimen/value_5"
+                        android:src="@drawable/g1" />
+
+
+                    <com.VijayAssayCenter.font.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/value_2"
+                        android:text="Certified Purity"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_14" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/value_10"
+                    android:paddingRight="@dimen/value_10">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/value_45"
+                        android:layout_height="@dimen/value_45"
+                        android:padding="@dimen/value_3"
+                        android:src="@drawable/indiaicon" />
+
+
+                    <com.VijayAssayCenter.font.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:lines="2"
+                        android:paddingBottom="@dimen/value_2"
+                        android:text="Lowest rate in India"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_14" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/value_45"
+                        android:layout_height="@dimen/value_45"
+                        android:src="@drawable/g2" />
+
+
+                    <com.VijayAssayCenter.font.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:lines="2"
+                        android:paddingLeft="@dimen/value_10"
+                        android:paddingRight="@dimen/value_10"
+                        android:paddingBottom="@dimen/value_2"
+                        android:text="No Minimum booking Qty"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_14" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <com.VijayAssayCenter.font.MyTextViewBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/value_15"
+                android:layout_marginTop="@dimen/value_3"
+                android:layout_marginRight="@dimen/value_15"
+                android:background="@drawable/shape_home_lable"
+                android:gravity="center"
+                android:paddingLeft="@dimen/value_15"
+                android:paddingTop="@dimen/value_7"
+                android:paddingRight="@dimen/value_15"
+                android:paddingBottom="@dimen/value_7"
+                android:text="RATES SHOWN HERE ARE MAKING CHARGES PER COIN"
+                android:textColor="@color/primecolor"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/avi"
+                style="@style/AVLoadingIndicatorView"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                app:indicatorColor="@color/primecolor"
+                app:indicatorName="LineSpinFadeLoaderIndicator" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_coin_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/value_2"
+                android:layout_marginRight="@dimen/value_2"
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:id="@+id/tvLiveRateNotAvailable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:gravity="center_horizontal"
+                android:text="Coin rates currently not available"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

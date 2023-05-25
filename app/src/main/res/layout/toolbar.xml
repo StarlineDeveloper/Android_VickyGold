@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="?attr/colorPrimary"
+    app:contentInsetEnd="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetStart="0dp"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <FrameLayout
+            android:id="@+id/ivDrawer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/value_10"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="@dimen/value_8"
+                android:src="@drawable/ic_user" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:src="@drawable/ic_menu_new"
+                app:civ_border_color="#D1B000"
+                app:civ_border_width="1dp" />
+
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="left|center"
+            android:padding="@dimen/value_10"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/value_18"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_marginStart="@dimen/value_30"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:src="@drawable/topuplogo" />-->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/value_30"
+                android:src="@drawable/vicky" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_go_whatsapp"
+            android:layout_width="@dimen/value_50"
+            android:layout_height="@dimen/value_50"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/value_5"
+            android:src="@drawable/whatpp" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/iv_menu"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center|right"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="@dimen/value_20"
+            android:src="@drawable/ic_iconfinder_glyph_46_3403727"
+            app:civ_border_color="#000000"
+            app:civ_border_width="1dp" />
+
+
+    </LinearLayout>
+</androidx.appcompat.widget.Toolbar>

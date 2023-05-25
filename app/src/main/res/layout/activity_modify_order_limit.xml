@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/centerbackgaround">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#51ECCD87"
+        android:layout_height="match_parent">
+
+    </View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lay_back"
+                android:layout_width="wrap_content"
+                android:layout_gravity="top|left"
+                android:padding="@dimen/value_15"
+                android:layout_marginTop="@dimen/value_5"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_keyboard_backspace_black_24dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="top|right"
+                android:gravity="top"
+                android:elevation="@dimen/value_2"
+                android:layout_marginTop="@dimen/value_20"
+                android:layout_marginRight="@dimen/value_25"
+                android:layout_height="wrap_content">
+
+                <com.VijayAssayCenter.font.MyTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Modify Order Limit"
+                    android:paddingRight="@dimen/value_15"
+                    android:paddingTop="@dimen/value_2"
+                    android:paddingBottom="@dimen/value_5"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_18" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/value_20"
+            android:layout_marginRight="@dimen/value_20"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/value_20"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent">
+
+                <com.VijayAssayCenter.font.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_gravity="center"
+                    android:text="Available Order Limit"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_18" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:hint="Order Limit"
+                    android:padding="@dimen/value_8"
+                    android:background="@drawable/editnew"
+                    android:textSize="@dimen/font_18" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/value_20"
+            android:layout_marginRight="@dimen/value_20"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/value_10"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent">
+
+                <com.VijayAssayCenter.font.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_gravity="center"
+                    android:text="Security Deposit Balance"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_18" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:hint="Balance"
+                    android:padding="@dimen/value_8"
+                    android:background="@drawable/editnew"
+                    android:textSize="@dimen/font_18" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <com.VijayAssayCenter.font.MyTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/value_20"
+            android:text="REQUEST ORDER LIMIT"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_18" />
+
+        <com.VijayAssayCenter.font.MyTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/value_20"
+            android:text="200 gms"
+            android:paddingLeft="@dimen/value_20"
+            android:paddingRight="@dimen/value_5"
+            android:paddingBottom="@dimen/value_7"
+            android:paddingTop="@dimen/value_7"
+            android:background="@drawable/editnew"
+            android:textColor="@color/black"
+            android:drawablePadding="@dimen/value_5"
+            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+            android:textSize="@dimen/font_18" />
+
+        <com.VijayAssayCenter.font.MyTextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/value_30"
+            android:text="OR"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_18" />
+
+
+        <com.VijayAssayCenter.font.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="@dimen/value_10"
+            android:drawableLeft="@drawable/ic_call"
+            android:layout_marginTop="@dimen/value_50"
+            android:text="Call to Modify Limit"
+            android:background="@drawable/green"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_18" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</FrameLayout>

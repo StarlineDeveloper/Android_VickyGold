@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/value_10"
+        android:background="#95FFFFFF"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_10"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/value_15"
+            android:paddingRight="@dimen/value_5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:orientation="vertical">
+
+                <com.VijayAssayCenter.font.MyTextViewBold
+                    android:id="@+id/office_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:paddingTop="@dimen/value_5"
+                    android:paddingBottom="@dimen/value_5"
+                    android:text="Bowbazar – Head Office"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:layout_weight="0.6"
+                android:gravity="top"
+                android:orientation="vertical">
+
+                <com.VijayAssayCenter.font.MyTextViewBold
+                    android:id="@+id/click"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingTop="@dimen/value_5"
+                    android:paddingRight="@dimen/value_5"
+                    android:paddingBottom="@dimen/value_5"
+                    android:text="Take me here"
+                    android:textColor="@color/text1"
+                    android:textSize="16dp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/value_15">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/value_100"
+                    android:layout_height="@dimen/value_70"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="@dimen/value_10"
+                    android:padding="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/deliveryicon" />
+
+                <com.VijayAssayCenter.font.MyTextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:paddingRight="@dimen/value_10"
+                    android:paddingBottom="@dimen/value_10"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <com.VijayAssayCenter.font.MyTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:paddingTop="@dimen/value_10"
+                android:paddingRight="@dimen/value_15"
+                android:paddingBottom="@dimen/value_5"
+                android:text="Services Available:"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <com.VijayAssayCenter.font.MyTextView
+                android:id="@+id/avalable_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:paddingRight="@dimen/value_10"
+                android:paddingBottom="@dimen/value_10"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

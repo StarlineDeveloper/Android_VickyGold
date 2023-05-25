@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragmet.MarqeeCustome">
+
+
+    <EditText
+        android:id="@+id/et_marqee"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/value_15"
+        android:lines="5"
+        android:hint="MARQUEE"
+        android:elevation="@dimen/value_2"
+        android:textSize="@dimen/font_18"
+        android:padding="@dimen/value_10"
+        android:gravity="top"
+        android:background="@drawable/shape_edit"
+        android:layout_height="wrap_content">
+    </EditText>
+
+
+    <TextView
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/value_15"
+        android:layout_marginLeft="@dimen/value_15"
+        android:elevation="@dimen/value_2"
+        android:background="@drawable/button_circle"
+        android:text="SUBMIT"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

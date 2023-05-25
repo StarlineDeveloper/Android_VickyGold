@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragmet.GeneralPremium">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/shape_card"
+        android:padding="@dimen/value_10"
+        android:layout_margin="@dimen/value_3"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:text="Header" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/value_5"
+            android:background="@color/black"
+            android:layout_height="1dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.3"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:textStyle="italic"
+                    android:textSize="@dimen/font_14"
+                    android:drawableLeft="@drawable/ic_event_available_black_24dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:text="Last Updated Date : 19-Aug-20 11:34:16" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="right"
+                android:gravity="right|center"
+                android:layout_weight="0.7"
+                android:background="@color/white"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_delete"
+                    android:layout_width="@dimen/value_100"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:background="@drawable/button_delte"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:layout_marginRight="@dimen/value_10"
+                    android:padding="@dimen/value_7"
+                    android:layout_gravity="center"
+                    android:text="STOP" />
+
+
+                <TextView
+                    android:id="@+id/et_edit"
+                    android:layout_width="@dimen/value_100"
+                    android:layout_height="wrap_content"
+                    android:singleLine="false"
+                    android:background="@drawable/button_green"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+
+                    android:padding="@dimen/value_7"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:text="Edit" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/value_3"
+        android:background="@drawable/shape_card"
+        android:padding="@dimen/value_20">
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PRODUCT NAME"
+            android:background="@drawable/border"
+            android:inputType="text"
+            android:padding="@dimen/value_10" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:padding="@dimen/value_10"
+                android:text="SALE"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:padding="@dimen/value_10"
+                android:text="BUY"/>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_green"
+            android:elevation="@dimen/value_2"
+            android:gravity="center"
+            android:text="SUBMIT"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/reg_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Or Register New Account."
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/hsv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true"
+        android:measureAllChildren="false"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="@color/colorPrimaryDark"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="@dimen/value_70"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_14"
+                    android:padding="@dimen/value_5"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:text="Edit" />
+                <View
+                    android:layout_width="1dp"
+                    android:background="@color/white"
+                    android:layout_height="match_parent">
+
+                </View>
+
+                <TextView
+                    android:layout_width="@dimen/value_110"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_14"
+                    android:padding="@dimen/value_5"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:text="Product Type" />
+                  <View
+                      android:layout_width="1dp"
+                      android:background="@color/white"
+                      android:layout_height="match_parent">
+
+                  </View>
+                <TextView
+                    android:layout_width="@dimen/value_150"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_14"
+                    android:padding="@dimen/value_5"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:text="Symbol" />
+                <View
+                    android:layout_width="1dp"
+                    android:background="@color/white"
+                    android:layout_height="match_parent">
+
+                </View>
+
+                <TextView
+                    android:layout_width="@dimen/value_70"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_14"
+                    android:padding="@dimen/value_5"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:text="Source" />
+                <View
+                    android:layout_width="1dp"
+                    android:background="@color/white"
+                    android:layout_height="match_parent">
+
+                </View>
+
+                <TextView
+                    android:layout_width="@dimen/value_100"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_14"
+                    android:padding="@dimen/value_5"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:text="Display Type" />
+                <View
+                    android:layout_width="1dp"
+                    android:background="@color/white"
+                    android:layout_height="match_parent">
+
+                </View>
+
+                <TextView
+                    android:layout_width="@dimen/value_50"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_14"
+                    android:padding="@dimen/value_5"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:text="Digits" />
+                <View
+                    android:layout_width="1dp"
+                    android:background="@color/white"
+                    android:layout_height="match_parent">
+
+                </View>
+
+                <TextView
+                    android:layout_width="@dimen/value_110"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_14"
+                    android:padding="@dimen/value_5"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:text="Stocks/Display" />
+                <View
+                    android:layout_width="1dp"
+                    android:background="@color/white"
+                    android:layout_height="match_parent">
+
+                </View>
+
+                <TextView
+                    android:layout_width="@dimen/value_150"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_14"
+                    android:padding="@dimen/value_5"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:text="Date-Time" />
+                <View
+                    android:layout_width="1dp"
+                    android:background="@color/white"
+                    android:layout_height="match_parent">
+
+                </View>
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/black"
+                android:layout_height="1dp">
+
+            </View>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_genral_priminum"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:layout_height="wrap_content">
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bacground_color1">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="top|left"
+            android:padding="@dimen/value_15"
+            android:layout_marginTop="@dimen/value_10"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_keyboard_backspace_black_24dp" />
+
+        </LinearLayout>
+
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:src="@drawable/smailllogo" />
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/centerbackgaround" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="top"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="@dimen/value_25"
+            android:layout_marginRight="@dimen/value_25"
+            android:layout_height="wrap_content">
+
+
+
+            <com.VijayAssayCenter.font.MyTextViewBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="@string/name"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+
+            <com.VijayAssayCenter.font.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/entername"
+                android:layout_marginTop="@dimen/value_50"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Name"
+                android:inputType="number"
+                android:maxLength="10"
+                android:layout_margin="@dimen/value_5"
+                android:textCursorDrawable="@drawable/custome"
+                android:background="@android:color/transparent"
+                android:textColor="@color/black"
+                android:textSize="@dimen/value_20" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#203864"
+                android:layout_height="@dimen/value_3"></View>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/lay_next"
+                android:layout_width="match_parent"
+                android:background="@drawable/btn1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:elevation="@dimen/value_2"
+                android:layout_marginTop="@dimen/value_30"
+                android:layout_height="match_parent">
+
+                <com.VijayAssayCenter.font.MyTextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:text="@string/next"
+                    android:textColor="@color/white"
+                    android:elevation="@dimen/value_2"
+                    android:padding="@dimen/value_8"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lay_skip"
+                android:layout_width="match_parent"
+                android:background="@drawable/btn2"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:elevation="@dimen/value_2"
+                android:layout_marginTop="@dimen/value_10"
+                android:layout_height="match_parent">
+
+                <com.VijayAssayCenter.font.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/skip"
+                    android:textColor="@color/black"
+                    android:elevation="@dimen/value_2"
+                    android:padding="@dimen/value_10"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+
+                <com.VijayAssayCenter.font.MyTextView
+                    android:id="@+id/tv_condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/value_5"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </FrameLayout>
+</FrameLayout>

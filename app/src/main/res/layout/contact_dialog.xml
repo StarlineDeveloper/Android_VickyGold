@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/value_40"
+        android:layout_marginRight="@dimen/value_40"
+        android:background="@drawable/cio"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/value_30">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value_15"
+                android:layout_marginBottom="@dimen/value_15"
+                android:orientation="horizontal">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_menu"
+                    android:layout_width="@dimen/value_30"
+                    android:layout_height="@dimen/value_30"
+                    android:layout_gravity="center|right"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="@dimen/value_20"
+                    android:src="@drawable/ic_iconfinder_glyph_46_3403727"
+                    app:civ_border_color="#000000"
+                    app:civ_border_width="1dp" />
+
+
+                <com.VijayAssayCenter.font.MyTextViewBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/value_15"
+                    android:paddingBottom="@dimen/value_5"
+                    android:text="Tap to connect"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_22"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <com.VijayAssayCenter.font.MyTextViewBold
+                android:id="@+id/tv_no_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/value_15"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/value_15"
+                android:layout_marginBottom="@dimen/value_5"
+                android:background="@drawable/shape_contcat"
+                android:gravity="center"
+                android:padding="@dimen/value_10"
+                android:text="Common Helpline No : 033-2236-5312"
+                android:textColor="@color/black"
+                android:textSize="@dimen/value_16"
+                android:textStyle="bold" />
+
+            <com.VijayAssayCenter.font.MyTextViewBold
+                android:id="@+id/tv_no_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/value_15"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/value_15"
+                android:layout_marginBottom="@dimen/value_5"
+                android:background="@drawable/shape_contcat"
+                android:gravity="center"
+                android:padding="@dimen/value_10"
+                android:text="Common Helpline No : 033-2236-5312"
+                android:textColor="@color/black"
+                android:textSize="@dimen/value_16"
+                android:textStyle="bold" />
+
+            <com.VijayAssayCenter.font.MyTextViewBold
+                android:id="@+id/tv_no_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/value_15"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/value_15"
+                android:layout_marginBottom="@dimen/value_5"
+                android:background="@drawable/shape_contcat"
+                android:gravity="center"
+                android:padding="@dimen/value_10"
+                android:text="Common Helpline No : 033-2236-5312"
+                android:textColor="@color/black"
+                android:textSize="@dimen/value_16"
+                android:textStyle="bold" />
+
+            <com.VijayAssayCenter.font.MyTextViewBold
+                android:id="@+id/tv_no_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/value_15"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/value_15"
+                android:layout_marginBottom="@dimen/value_5"
+                android:background="@drawable/shape_contcat"
+                android:gravity="center"
+                android:padding="@dimen/value_10"
+                android:text="Common Helpline No : 033-2236-5312"
+                android:textColor="@color/black"
+                android:textSize="@dimen/value_16"
+                android:textStyle="bold" />
+
+            <com.VijayAssayCenter.font.MyTextViewBold
+                android:id="@+id/tv_no_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/value_15"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/value_15"
+                android:layout_marginBottom="@dimen/value_5"
+                android:background="@drawable/shape_contcat"
+                android:gravity="center"
+                android:padding="@dimen/value_10"
+                android:text="Common Helpline No : 033-2236-5312"
+                android:textColor="@color/black"
+                android:textSize="@dimen/value_16"
+                android:textStyle="bold" />
+
+            <com.VijayAssayCenter.font.MyTextViewBold
+                android:id="@+id/tv_no_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/value_15"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/value_15"
+                android:layout_marginBottom="@dimen/value_5"
+                android:background="@drawable/shape_contcat"
+                android:gravity="center"
+                android:padding="@dimen/value_10"
+                android:text="Common Helpline No : 033-2236-5312"
+                android:textColor="@color/black"
+                android:textSize="@dimen/value_16"
+                android:textStyle="bold" />
+
+
+            <com.VijayAssayCenter.font.MyTextViewBold
+                android:id="@+id/tv_no_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/value_15"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/value_15"
+                android:layout_marginBottom="@dimen/value_5"
+                android:background="@drawable/shape_contcat"
+                android:gravity="center"
+                android:padding="@dimen/value_10"
+                android:text="Common Helpline No : 033-2236-5312"
+                android:textColor="@color/black"
+                android:textSize="@dimen/value_16"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tv_edit"
+                android:layout_width="@dimen/value_70"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_random"
+                android:textSize="@dimen/font_14"
+                android:drawablePadding="@dimen/value_5"
+                android:padding="@dimen/value_5"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:text="Edit" />
+            <View
+                android:layout_width="1dp"
+                android:background="@color/black"
+                android:layout_height="match_parent">
+
+            </View>
+
+            <TextView
+                android:id="@+id/tv_product_type"
+                android:layout_width="@dimen/value_110"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="@dimen/font_14"
+                android:padding="@dimen/value_5"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:text="Product Type" />
+            <View
+                android:layout_width="1dp"
+                android:background="@color/black"
+                android:layout_height="match_parent">
+
+            </View>
+            <TextView
+                android:id="@+id/tv_symbol"
+                android:layout_width="@dimen/value_150"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="@dimen/font_14"
+                android:padding="@dimen/value_5"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:text="Symbol" />
+            <View
+                android:layout_width="1dp"
+                android:background="@color/black"
+                android:layout_height="match_parent">
+
+            </View>
+
+            <TextView
+                android:id="@+id/tv_sorce"
+                android:layout_width="@dimen/value_70"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="@dimen/font_14"
+                android:padding="@dimen/value_5"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:text="Source" />
+            <View
+                android:layout_width="1dp"
+                android:background="@color/black"
+                android:layout_height="match_parent">
+
+            </View>
+
+            <TextView
+                android:id="@+id/tv_dispay_rate_type"
+                android:layout_width="@dimen/value_100"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="@dimen/font_14"
+                android:padding="@dimen/value_5"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:text="Display Type" />
+            <View
+                android:layout_width="1dp"
+                android:background="@color/black"
+                android:layout_height="match_parent">
+
+            </View>
+
+            <TextView
+                android:id="@+id/tv_digit"
+                android:layout_width="@dimen/value_50"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="@dimen/font_14"
+                android:padding="@dimen/value_5"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:text="Digits" />
+            <View
+                android:layout_width="1dp"
+                android:background="@color/black"
+                android:layout_height="match_parent">
+
+            </View>
+
+
+            <LinearLayout
+                android:layout_width="@dimen/value_110"
+                android:orientation="horizontal"
+                android:padding="@dimen/value_5"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_stoke_dispay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_14"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:text="Stocks/Display" />
+
+                <TextView
+                    android:id="@+id/tv_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_14"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:text="Stocks/Display" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="1dp"
+                android:background="@color/black"
+                android:layout_height="match_parent">
+
+            </View>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="@dimen/value_150"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="@dimen/font_14"
+                android:padding="@dimen/value_5"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:text="Date-Time" />
+            <View
+                android:layout_width="1dp"
+                android:background="@color/black"
+                android:layout_height="match_parent">
+
+            </View>
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            android:layout_height="1dp">
+
+        </View>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

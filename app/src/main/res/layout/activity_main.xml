@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.drawerlayout.widget.DrawerLayout
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- We use a Toolbar so that our drawer can be displayed
+                     in front of the action bar -->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.appbar.AppBarLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/AppTheme.AppBarOverlay">
+
+                        <include layout="@layout/toolbar" />
+                    </com.google.android.material.appbar.AppBarLayout>
+
+
+                </FrameLayout>
+
+
+                <!-- The rest of your content view -->
+                <LinearLayout
+                    android:id="@+id/mainLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fadeScrollbars="false"
+                    android:fadingEdge="none"
+                    android:orientation="vertical"
+                    android:scrollbars="none"
+                    android:visibility="visible">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="@dimen/value_2"
+                        android:background="@color/black" />
+
+                    <FrameLayout
+                        android:id="@+id/main_frame"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8"
+                        android:background="@color/white"
+                        android:visibility="visible">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/ll_marqee_Top"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#326BB2F4"
+                                android:orientation="vertical"
+                                android:paddingTop="2dp"
+                                android:paddingBottom="2dp"
+                                android:visibility="gone">
+
+                                <com.VijayAssayCenter.utils.ScrollTextView
+                                    android:id="@+id/tvMarquee"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/font_14" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:background="@color/black" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/buy_user"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/value_2"
+                                android:paddingLeft="@dimen/value_10"
+                                android:paddingRight="@dimen/value_10">
+
+                                <com.VijayAssayCenter.utils.ScrollTextView
+                                    android:id="@+id/tvMarqueeGlod"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:gravity="start"
+                                    android:text="Gold"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/font_14"
+                                    android:textStyle="bold" />
+
+                                <com.VijayAssayCenter.utils.ScrollTextView
+                                    android:id="@+id/tvMarqueeSlider"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:gravity="end"
+                                    android:text="Silver"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/font_14"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/black" />
+
+                            <com.VijayAssayCenter.utils.ScrollTextView
+                                android:id="@+id/tvMarquee3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="@dimen/value_2"
+                                android:text=""
+                                android:textColor="@color/btn"
+                                android:textSize="@dimen/font_14"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="@color/black" />
+
+                            <com.google.android.material.tabs.TabLayout
+                                android:id="@+id/tabs"
+                                android:layout_width="match_parent"
+                                android:layout_height="65dp"
+                                android:background="@color/white"
+                                app:tabBackground="@drawable/tab_color_selector"
+                                app:tabGravity="center"
+                                app:tabIndicatorColor="@color/black"
+                                app:tabIndicatorHeight="2dp"
+                                app:tabMode="fixed"
+                                app:tabSelectedTextColor="@color/black"
+                                app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+                                app:tabTextColor="#000000" />
+
+
+                            <LinearLayout
+                                android:id="@+id/txt_no_internet"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/toolbar"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:padding="3dp"
+                                android:visibility="gone">
+
+                                <com.wang.avi.AVLoadingIndicatorView
+                                    android:id="@+id/loadingSplash"
+                                    android:layout_width="28dp"
+                                    android:layout_height="28dp"
+                                    app:indicatorColor="@color/black"
+                                    app:indicatorName="LineSpinFadeLoaderIndicator" />
+
+                                <com.VijayAssayCenter.font.MyTextViewBold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:paddingStart="5dp"
+                                    android:text="Waiting For Network..."
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    tools:ignore="HardcodedText" />
+
+                            </LinearLayout>
+
+                            <com.VijayAssayCenter.activity.NonSwipeableViewPager
+                                android:id="@+id/viewpager"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="@dimen/value_0" />
+
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:id="@+id/ll_marqee22"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#326BB2F4"
+                            android:orientation="vertical"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:visibility="gone">
+
+                            <com.VijayAssayCenter.utils.ScrollTextViewTwo
+                                android:id="@+id/tvMarquee22"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:marqueeRepeatLimit="marquee_forever"
+
+                                android:textColor="@color/black"
+
+                                android:textSize="@dimen/font_14" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Main layout -->
+
+
+            <!-- The navigation drawer -->
+
+            <FrameLayout
+                android:layout_width="275dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/centerbackgaround">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/lay_profile_page"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#DFBB6F"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/value_15"
+                            android:paddingTop="@dimen/value_15"
+                            android:paddingRight="@dimen/value_15"
+                            android:paddingBottom="@dimen/value_15">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/tv_user_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Welcome"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/value_16" />
+
+                                <TextView
+                                    android:id="@+id/frim_name_display"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text=""
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/font_14"
+                                    android:textStyle="italic" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.8"
+                                android:orientation="vertical">
+
+                                <FrameLayout
+                                    android:id="@+id/ivDrawer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center">
+
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="left"
+                                        android:layout_marginStart="@dimen/value_10"
+                                        android:layout_marginEnd="@dimen/value_10"
+                                        android:layout_marginBottom="@dimen/value_8"
+                                        android:src="@drawable/user2" />
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/profile_image"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="bottom|right"
+                                        android:src="@drawable/iv_glod"
+                                        app:civ_border_color="#000000"
+                                        app:civ_border_width="@dimen/value_1" />
+
+
+                                </FrameLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/lay_update_profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/value_5"
+                            android:background="#DFBB6F"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/value_15"
+                            android:paddingTop="@dimen/value_15"
+                            android:paddingRight="@dimen/value_15"
+                            android:paddingBottom="@dimen/value_15">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Your Profile"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/value_16" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Click to Update"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_14"
+                                android:textStyle="italic" />
+
+
+                        </LinearLayout>
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/lay_order_limit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingStart="@dimen/value_15"
+                                    android:paddingTop="@dimen/value_15"
+                                    android:paddingBottom="@dimen/value_15">
+
+                                    <com.VijayAssayCenter.font.MyTextViewBold
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Home Page"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/value_16"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/lay_abouts"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/value_15"
+                                    android:paddingTop="@dimen/value_15"
+                                    android:paddingBottom="@dimen/value_15">
+
+                                    <com.VijayAssayCenter.font.MyTextViewBold
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="How to use App"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/value_16"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/lay_tutarials"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/value_15"
+                                    android:paddingTop="@dimen/value_15"
+                                    android:paddingBottom="@dimen/value_15"
+                                    android:visibility="gone">
+
+                                    <com.VijayAssayCenter.font.MyTextViewBold
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Tutorial"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/value_16"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/lay_bank_details"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingStart="@dimen/value_15"
+                                    android:paddingTop="@dimen/value_15"
+                                    android:paddingBottom="@dimen/value_15"
+                                    android:visibility="gone">
+
+                                    <com.VijayAssayCenter.font.MyTextViewBold
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Payment Bank Details"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/value_16"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/lay_delevry_location"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingStart="@dimen/value_15"
+                                    android:paddingTop="@dimen/value_15"
+                                    android:paddingBottom="@dimen/value_15">
+
+                                    <com.VijayAssayCenter.font.MyTextViewBold
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Metal Delivery Location"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/value_16"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/lay_update_news"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingStart="@dimen/value_15"
+                                    android:paddingTop="@dimen/value_15"
+                                    android:paddingBottom="@dimen/value_15">
+
+                                    <com.VijayAssayCenter.font.MyTextViewBold
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="News"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/value_16"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/lay_contact_us"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingStart="@dimen/value_15"
+                                    android:paddingTop="@dimen/value_15"
+                                    android:paddingBottom="@dimen/value_15">
+
+                                    <com.VijayAssayCenter.font.MyTextViewBold
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Contact Us"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/value_16"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/lay_ll"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+
+                                    <com.VijayAssayCenter.font.MyTextViewBold
+                                        android:id="@+id/lay_log_out"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingStart="@dimen/value_15"
+                                        android:paddingTop="@dimen/value_15"
+                                        android:paddingBottom="@dimen/value_15"
+                                        android:text="Sign Out"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/value_16"
+                                        android:textStyle="bold" />
+
+                                    <!--                            <com.VijayAssayCenter.font.MyTextViewBold-->
+                                    <!--                                android:id="@+id/tv_looo"-->
+                                    <!--                                android:layout_width="match_parent"-->
+                                    <!--                                android:layout_height="match_parent"-->
+                                    <!--                                android:paddingStart="@dimen/value_15"-->
+                                    <!--                                android:paddingTop="@dimen/value_20"-->
+                                    <!--                                android:text=""-->
+                                    <!--                                android:textColor="@color/black"-->
+                                    <!--                                android:textSize="@dimen/value_16"-->
+                                    <!--                                android:textStyle="bold" />-->
+
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </ScrollView>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <ListView
+                    android:id="@+id/drawerListView"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:background="@color/bacground_color"
+                    android:choiceMode="singleChoice"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0dp"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+
+        </androidx.drawerlayout.widget.DrawerLayout>
+
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
